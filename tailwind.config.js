@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily:{
+      title: ["Matemasie","sans-serif"],
+      cardTitle: ["Josefin Sans","sans-serif"],
+    },
   },
   plugins: [],
 }
