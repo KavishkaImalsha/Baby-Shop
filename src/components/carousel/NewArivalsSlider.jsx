@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 const NewArivalsSlider = () => {
     const images = NewArivalsImage
     const settings = {
-    dots: true,
+    dots: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -35,7 +35,7 @@ const NewArivalsSlider = () => {
                             </div>
                             <div className="relative">
                                 <p><span className="line-through text-bold ml-32 text-gray-500">Rs: {item.realPrice}.00</span> <span className="ml-6 text-2xl font-bold text-blue-700">Rs: {item.discountPrice}.00</span></p>
-                                <div className="bg-orange-500 text-white font-bold rounded-full w-14 h-14 text-center pt-3 absolute left-[70%] bottom-10 text-2xl">30%</div>
+                                <div className="bg-orange-500 text-white font-bold rounded-full w-14 h-14 text-center pt-3 absolute left-[85%] bottom-16 text-2xl">30%</div>
                             </div>
                         </div>
                         ))}

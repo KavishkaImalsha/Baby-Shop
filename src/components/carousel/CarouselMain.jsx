@@ -26,7 +26,7 @@ const CarouselMain = () => {
     }, [currentIndex]);
 
     return(
-        <div className="w-full h-[450px] m-auto relative group">
+        <div className="w-full h-[550px] m-auto relative group">
             <div style={{backgroundImage: `url(${SliderImages[currentIndex].url})`}} className="w-full h-full bg-center bg-cover duration-500">
             </div>
             {/* Left Slider */}

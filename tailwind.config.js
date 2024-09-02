@@ -9,6 +9,7 @@ export default {
     fontFamily:{
       title: ["Matemasie","sans-serif"],
       cardTitle: ["Josefin Sans","sans-serif"],
+      desHeader: ["Ubuntu Mono", "monospace"],
     },
   },
   plugins: [],
