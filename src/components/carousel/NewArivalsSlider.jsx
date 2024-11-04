@@ -33,10 +33,7 @@ const NewArivalsSlider = () => {
                                     <li>{item.des3}</li>
                                 </ul>
                             </div>
-                            <div className="relative">
-                                <p><span className="line-through text-bold ml-32 text-gray-500">Rs: {item.realPrice}.00</span> <span className="ml-6 text-2xl font-bold text-blue-700">Rs: {item.discountPrice}.00</span></p>
-                                <div className="bg-orange-500 text-white font-bold rounded-full w-14 h-14 text-center pt-3 absolute left-[85%] bottom-16 text-2xl">30%</div>
-                            </div>
+                            
                         </div>
                         ))}
                         </Slider>

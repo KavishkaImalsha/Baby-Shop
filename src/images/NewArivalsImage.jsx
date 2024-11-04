@@ -6,4 +6,4 @@ const NewArivalsImage = [
 
 ]
 
-export default NewArivalsImage
+export default NewArivalsImage;

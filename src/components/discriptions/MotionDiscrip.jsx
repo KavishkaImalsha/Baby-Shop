@@ -1,6 +1,7 @@
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
-const MotionDiscrip = ({url, header, discription, btnDiscription}) => {
+import {Link} from 'react-router-dom';
+const MotionDiscrip = ({url, header, discription, btnDiscription, page}) => {
     const containerRef = useRef(null);
     const isInViwe = useInView(containerRef, {once: true});
     const mainControls = useAnimation();
@@ -26,7 +27,7 @@ const MotionDiscrip = ({url, header, discription, btnDiscription}) => {
                         {header}
                     </motion.h1>
 
-                    <motion.p className="text-center mt-10 text-2xl font-bold text-white"
+                    <motion.p className="text-center mt-10 text-2xl font-bold text-gray-800"
                     animate={mainControls}
                     initial="hidden"
                     variants={{
@@ -38,7 +39,8 @@ const MotionDiscrip = ({url, header, discription, btnDiscription}) => {
                     {discription}
                     </motion.p>
 
-                    <motion.button className="bg-transparent border-2 border-white text-white font-bold rounded-lg text-center w-56 ml-[40%] mt-10 hover:bg-amber-900 hover:border-amber-900" whileHover={{scale: 1.1, transition:{delay:0.1}}}
+                    <Link to={page}>
+                    <motion.button className="bg-transparent border-2 border-gray-800 text-gray-800 font-bold rounded-lg text-center w-56 h-14 ml-[40%] mt-10 hover:bg-amber-900 hover:border-amber-900 hover:text-white" whileHover={{scale: 1.1, transition:{delay:0.1}}}
                     animate={mainControls}
                     initial="hidden"
                     variants={{
@@ -49,6 +51,7 @@ const MotionDiscrip = ({url, header, discription, btnDiscription}) => {
                     >
                         {btnDiscription}
                     </motion.button>
+                    </Link>
                 </motion.div>
             </motion.div>
     )
